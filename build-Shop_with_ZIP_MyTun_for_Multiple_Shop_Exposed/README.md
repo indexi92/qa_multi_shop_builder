@@ -27,7 +27,7 @@ Crée un fichier `.env` à la racine du dossier build-Shop_with_Ngrok avec ce co
 ACCOUNT_TAG="your account tag"
 TUNNEL_SECRET="your tunel secret"
 TUNNEL_ID="your tunel id"
-PS_DOMAIN="prestashop.firstname-name-mytun.prestashop.name"
+PREFIX="prestashop"
 DOMAIN="firstname-name-mytun.prestashop.name"
 
 ```
