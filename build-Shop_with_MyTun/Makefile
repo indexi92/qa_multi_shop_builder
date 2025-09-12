@@ -8,6 +8,8 @@ monostore:
 	make generate-mytun-config PROFILE=monostore
 	sed -i '' 's/^      PHYSICAL_URI:/#      PHYSICAL_URI:/' $(DC_FILE)
 	docker compose --profile monostore up --build -d
+	@echo "⏳ Installation de la Shop cours, merci de patienter..."
+	@docker compose logs -f --no-color shop1 | awk '/Running init script\(s\)/ { exit }'
 	@echo "🌐 Accès à la boutique : https://${PS_DOMAIN}/"
 
 multistore:
