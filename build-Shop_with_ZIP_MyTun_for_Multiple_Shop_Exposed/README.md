@@ -125,7 +125,7 @@ Une fois dans files aller dans :
    - html
    - .env
 
-Ensuite éditer le ficher, a la ligne 6 il faut ajouter 127.0.0.1,REMOTE_ADDR
+Ensuite éditer le ficher, apèrs le PS_TRUSTED_PROXIES= il faut ajouter 127.0.0.1,REMOTE_ADDR
 
 ---
 
